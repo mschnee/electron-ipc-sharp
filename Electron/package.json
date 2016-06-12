@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:clean":"./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts clean",
+    "build:clean": "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts clean",
     "build:copy": "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts copy",
-    "build:tsc":  "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts tsc",
-    "build":      "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts build"
+    "build:tsc": "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts tsc",
+    "build": "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts build",
+    "electron": "./node_modules/.bin/electron ./output/electron-main.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,8 @@
     "typings": "^1.0.5"
   },
   "dependencies": {
-    "node-ipc": "^7.0.0"
+    "node-ipc": "^7.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   }
 }

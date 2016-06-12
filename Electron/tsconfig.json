@@ -9,7 +9,8 @@
         "outDir": "output",
         "pretty": true,
         "rootDir": "./source/",
-        "sourceRoot": "./source/"
+        "sourceRoot": "./source/",
+        "jsx": "react"
     },
     "exclude": [
         "node_modules",

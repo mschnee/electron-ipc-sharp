@@ -5,7 +5,9 @@
     "electron": "registry:env/electron#0.37.6+20160416165306",
     "github-electron/electron-prebuilt": "registry:dt/github-electron/electron-prebuilt#0.30.1+20160316155526",
     "ncp": "registry:dt/ncp#0.5.1+20160316155526",
-    "node": "registry:dt/node#6.0.0+20160608110640"
+    "node": "registry:dt/node#6.0.0+20160608110640",
+    "react": "registry:dt/react#0.14.0+20160602151522",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
   },
   "globalDevDependencies": {
     "node": "registry:dt/node#6.0.0+20160608110640"
