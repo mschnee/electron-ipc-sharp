@@ -1,5 +1,5 @@
 # electron-ipc-sharp
-A little experiment: Get a C# app to launch and communicate with Electon using node-ipc
+A little experiment: Get a C# app to launch and communicate with Electron using node-ipc
 
 ## Why?
 Because I'm curious.  JavaScript has gotten a lot faster, but it's still a single-threaeded sandbox.  Native Node Modules are really complicated to write, so instead let's flip that paradigm upsidedown: Have Electron and the UI child process be dedicated to UI and UI only, let a core native application handle all the heavy lifting.
