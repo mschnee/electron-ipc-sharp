@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "output",
+        "pretty": true,
+        "rootDir": "./source/",
+        "sourceRoot": "./source/"
+    },
+    "exclude": [
+        "node_modules",
+        "output",
+        "tools"
+    ]
+}

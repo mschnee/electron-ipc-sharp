@@ -8,7 +8,7 @@ namespace Core
 {
     public class Program
     {
-        static readonly Mutex singleInstanceMutex = new Mutex(true, "{0d716303-e857-41d1-acd5-f3556d720c8c}");
+        static readonly Mutex singleInstanceMutex = new Mutex(true, "{ce0415be-eec2-42cb-bb17-3880031714d9}");
 
         public static void Main(string[] args)
         {

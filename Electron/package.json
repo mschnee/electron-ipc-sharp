@@ -1,0 +1,28 @@
+{
+  "name": "electron-ipc-sharp-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:clean":"./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts clean",
+    "build:copy": "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts copy",
+    "build:tsc":  "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts tsc",
+    "build":      "./node_modules/.bin/ts-node -P tools/tsconfig.json tools/run.ts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^3.4.0",
+    "del": "^2.2.0",
+    "electron-prebuilt": "^1.2.2",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "ts-node": "^0.9.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.5"
+  },
+  "dependencies": {
+    "node-ipc": "^7.0.0"
+  }
+}
