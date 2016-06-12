@@ -2,7 +2,7 @@
 A little experiment: Get a C# app to launch and communicate with Electron using node-ipc
 
 ## Why?
-Because I'm curious.  JavaScript has gotten a lot faster, but it's still a single-threaeded sandbox.  Native Node Modules are really complicated to write, so instead let's flip that paradigm upsidedown: Have Electron and the UI child process be dedicated to UI and UI only, let a core native application handle all the heavy lifting.
+Because I'm curious.  JavaScript has gotten a lot faster, but it's still a single-threaded sandbox.  Native Node Modules are really complicated to write, so instead let's flip that paradigm upsidedown: Have Electron and the UI child process be dedicated to UI and UI only, let a core native application handle all the heavy lifting.
 
 A Native app- even a Managed App like with C#- gives us a ton of things we can't easily do in ES2015: access hardware resources, access resources **safely**, proper threading and deferred tasks, large file access and handling, native GPU access,
 
