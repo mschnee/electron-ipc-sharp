@@ -11,6 +11,7 @@ A Native app- even a Managed App like with C#- gives us a ton of things we can't
 - Core will start up some kind of IPC
 - Core will launch the Electron app
 - Electron: UI things.  The render process will connect to Core
+- Do it in TypeScript or else things will get out of hand.
 - What does this all do?  I guess I could use it to manage/play music or something.
 
 ## Building
