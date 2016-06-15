@@ -1,0 +1,51 @@
+{
+
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "windows": {
+        "command": "cmd",
+        "args": ["/C"]
+    },
+    "command": "/bin/bash",
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "suppressTaskName": true,
+            "taskName": "C# Build Core",
+            "args": ["dotnet build Core"],
+            "isBuildCommand": true,
+            "showOutput": "silent",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "suppressTaskName": true,
+            "taskName": "C# Run Core",
+            "args": ["dotnet run Core"],
+            "isBuildCommand": false,
+            "showOutput": "always"
+        },
+        {
+            "suppressTaskName": true,
+            "taskName": "NPM Install",
+            "args": ["npm --progress=false --prefix ./Electron install"],
+            "isBuildCommand": false,
+            "showOutput": "always"
+        },
+        {
+            "suppressTaskName": true,
+            "taskName": "NPM Build",
+            "args": ["npm --prefix ./Electron run build"],
+            "isBuildCommand": false,
+            "showOutput": "always",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "suppressTaskName": true,
+            "taskName": "Run Electron",
+            "args": ["npm --prefix ./Electron run electron"],
+            "isBuildCommand": false,
+            "showOutput": "always"
+        }
+    ]
+}
