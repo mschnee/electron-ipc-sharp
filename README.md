@@ -21,11 +21,11 @@ The Solution File is really only there for the C# Core app at the moment, and it
 
 Build the C# app
 ```
-cs Core && dotnet restore && dotnet build
+cd source/Core && dotnet restore && dotnet build
 ```
 Build all the Typescript
 ```
-cd Electron && npm install && npm run build
+cd source/Ui && npm install && npm run build
 ```
 
 ## Running it

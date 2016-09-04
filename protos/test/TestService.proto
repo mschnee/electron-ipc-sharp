@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+
+message TestVoidMessage {}
+
+message TestResponse {
+    required bool response = 1;
+}
+
+message TestBoolMessage {
+    required bool param1 = 1;
+}
+
+message TestIntMessage {
+    required int32 param1 = 1;
+}
+
+message TestEventMessage {
+
+}
+
+service TestService {
+    rpc TestVoid (TestVoidMessage) returns (TestResponse);
+    rpc TestBool (TestBoolMessage) returns (TestResponse);
+    rpc TestInt (TestIntMessage) returns (TestResponse);
+    rpc TestEvent (TestVoidMessage) returns (TestVoidMessage) {
+        option event_emitter = true;
+    };
+}
