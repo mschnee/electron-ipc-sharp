@@ -12,40 +12,10 @@
     "tasks": [
         {
             "suppressTaskName": true,
-            "taskName": "C# Build Core",
-            "args": ["dotnet build Core"],
-            "isBuildCommand": true,
-            "showOutput": "silent",
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "suppressTaskName": true,
-            "taskName": "C# Run Core",
-            "args": ["dotnet run Core"],
-            "isBuildCommand": false,
-            "showOutput": "always"
-        },
-        {
-            "suppressTaskName": true,
-            "taskName": "NPM Install",
-            "args": ["npm --progress=false --prefix ./Electron install"],
-            "isBuildCommand": false,
-            "showOutput": "always"
-        },
-        {
-            "suppressTaskName": true,
-            "taskName": "NPM Build",
-            "args": ["npm --prefix ./Electron run build"],
-            "isBuildCommand": false,
-            "showOutput": "always",
-            "problemMatcher": "$tsc"
-        },
-        {
-            "suppressTaskName": true,
-            "taskName": "Run Electron",
-            "args": ["npm --prefix ./Electron run electron"],
-            "isBuildCommand": false,
-            "showOutput": "always"
+            "taskName": "Client: Build Typescript",
+            "args": [
+                "cd source/Clients/ts && ./node_modules/bin/tsc"
+            ]
         }
     ]
 }
