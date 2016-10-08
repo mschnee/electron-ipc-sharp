@@ -6,7 +6,6 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['mocha', 'chai'],
         files: [
-            '../RestClient/index.ts',
             {pattern: 'tests/**/*.ts'},
         ],
         exclude: [],

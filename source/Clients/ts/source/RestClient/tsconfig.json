@@ -1,16 +1,12 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "noResolve": false,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "experimentalDecorators": true,
-        "pretty": true,
-        "types": [
-            "whatwg-fetch", "mocha", "chai"
-        ]
+        "pretty": true
     },
     "files": [
-        "tests/RestClient/test.ts"
+        "index.ts"
     ]
 }

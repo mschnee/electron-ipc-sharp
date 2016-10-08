@@ -1,0 +1,4 @@
+{
+    "command": "./node_modules/.bin/tsc",
+    "suppressTaskName": true
+}

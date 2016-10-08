@@ -1,18 +1,20 @@
 module.exports = {
+    cache: true,
+    devtool: 'source-map',
     context: __dirname,
     resolve: {
-        extensions: ['.ts', '.js', '.tsx', '.jsx', '']
+        extensions: ['.ts', '.js', '.tsx', '.jsx']
     },
     module: {
         loaders: [
             {
                 test: /\.ts$/,
-                exclude: /node_modules/,
-                loader: 'ts-loader',
+                loader: 'babel-loader!ts-loader',
+                exclude: /node_modules/
             }
         ]
     },
-    entry: '../RestClient/index.ts',
+    entry: './tests/RestClient/test.ts',
     output: {
         path: './dist',
         filename: 'RestClient.js'

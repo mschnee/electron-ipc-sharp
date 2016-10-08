@@ -4,5 +4,10 @@
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "outDir": "dist"
-    }
+    },
+    "files": [
+        "./source/web/RestClient.ts",
+        "./source/web/RestWorkerClient.ts",
+        "./source/worker/RestWorkerClientWorker.ts"
+    ]
 }

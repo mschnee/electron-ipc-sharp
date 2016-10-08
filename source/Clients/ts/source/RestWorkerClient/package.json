@@ -1,5 +1,5 @@
 {
-  "name": "@electron-ips-sharp/ts",
+  "name": "@electron-ips-sharp/ts-rest-worker-client",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/whatwg-fetch": "0.0.31",
     "mocha": "^3.0.2",
     "ts-loader": "^0.8.2",
     "ts-node": "^1.3.0",
