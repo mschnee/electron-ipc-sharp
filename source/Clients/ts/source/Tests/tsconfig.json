@@ -1,16 +1,24 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
         "noResolve": false,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "experimentalDecorators": true,
         "pretty": true,
-        "types": [
-            "whatwg-fetch", "mocha", "chai"
+        "jsx": "react",
+        "typeRoots": [
+            "./node_modules/@types"
         ]
     },
-    "files": [
-        "tests/RestClient/test.ts"
+    "include": [
+        "./app.ts",
+        "./node_modules/@types/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

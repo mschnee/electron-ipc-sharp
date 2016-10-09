@@ -33,13 +33,17 @@
     "ts-node": "^1.3.0",
     "typescript": "^2.0.3",
     "typings": "^1.4.0",
-    "webpack": "^2.1.0-beta.25"
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.8"
   },
   "dependencies": {
     "@types/chai": "^3.4.34",
     "@types/es6-promise": "0.0.32",
     "@types/mocha": "^2.2.32",
+    "@types/react": "^0.14.39",
+    "@types/react-dom": "^0.14.17",
     "@types/whatwg-fetch": "0.0.31",
-    "es6-promise": "^4.0.5"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }

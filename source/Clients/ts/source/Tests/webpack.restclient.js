@@ -1,3 +1,6 @@
+const webpack = require('webpack');
+const path = require('path');
+
 module.exports = {
     cache: true,
     devtool: 'source-map',
@@ -14,9 +17,15 @@ module.exports = {
             }
         ]
     },
-    entry: './tests/RestClient/test.ts',
+    entry: {
+        app: './app.ts',
+        vendor: ['react', 'react-dom']
+    },
     output: {
-        path: './dist',
-        filename: 'RestClient.js'
-    }
+        path: path.resolve(__dirname, 'dist'), 
+        filename: 'app.bundle.js'
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
+    ]
 }
